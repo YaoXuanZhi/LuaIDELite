@@ -419,7 +419,10 @@
 		"vscode-debugadapter": "^1.17.0",
 		"vscode-debugprotocol": "^1.17.0",
 		"vscode-languageclient": "^3.1.0"
-		
-		
+	},
+	"__metadata": {
+		"id": "72c860b0-860f-4a4e-8d1c-f450c533105d",
+		"publisherId": "69d2a73e-a840-4795-b65a-7f9cc6fc8983",
+		"publisherDisplayName": "kangping"
 	}
 }
