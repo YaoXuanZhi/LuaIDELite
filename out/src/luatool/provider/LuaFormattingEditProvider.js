@@ -18,6 +18,7 @@ class LuaFormattingEditProvider {
         var content = document.getText(range);
         var result = [];
         content = this.format(content);
+        content = content.replace(/\t/g, "    ");
         result.push(new vscode.TextEdit(range, content));
         return Promise.resolve(result);
     }

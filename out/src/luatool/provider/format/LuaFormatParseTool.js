@@ -175,7 +175,7 @@ class LuaFormatParseTool {
                         }
                         nextToken.comments.forEach(comment => {
                             if (comment.isLong) {
-                                content += "--[[" + comment.content + "]]\n";
+                                content += "--[[\n" + comment.content + "]]\n";
                             }
                             else {
                                 content += "--" + comment.content + "\n";
@@ -230,7 +230,7 @@ class LuaFormatParseTool {
                 if (token.comments.length > 0 && !(token.type == TokenInfo_1.TokenTypes.Keyword && (token.value == "else" || token.value == "elseif"))) {
                     token.comments.forEach(comment => {
                         if (comment.isLong) {
-                            content += "--[[" + comment.content + "]]\n";
+                            content += "--[[\n" + comment.content + "]]\n";
                         }
                         else {
                             if (token.type == TokenInfo_1.TokenTypes.Keyword && (token.value == "end" ||
